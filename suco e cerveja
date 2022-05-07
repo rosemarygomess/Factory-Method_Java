@@ -24,7 +24,7 @@ class Juice extends Vehicle {
 class Beer extends Vehicle {
   int wheel;
   
-  Bike(int wheel) {
+  Beer(int wheel) {
     this.wheel = wheel;
   }
   
@@ -49,10 +49,10 @@ class VehicleFactory {
 public class FactoryPatternExample {
 
   public static void main(String[] args) {
-    Vehicle car = VehicleFactory.getInstance("juice", 4);
+    Vehicle juice = VehicleFactory.getInstance("juice", 4);
     System.out.println(juice);
     
-    Vehicle bike = VehicleFactory.getInstance("beer", 2);
+    Vehicle beer = VehicleFactory.getInstance("beer", 2);
     System.out.println(beer);
   }
 
