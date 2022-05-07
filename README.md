@@ -19,6 +19,7 @@ Vantagens do Padrão Factory Method
 O Factory Method é bastante utilizado em diversos projetos mesmo os que possuam dois Creator por que  oferece um meio de desligar a implementação de um Product. Adicionando ou alterando Products isso não irá afetar o Creator, pois eles não estão fortemente ligados. Com o padrão Factory Method podemos encapsular o código que cria objetos.
 
 Referência Bibliográfica
+
 Gamma, E. et al (2007). Design Patterns: elements of reusable object-oriented software. 35 ed. Massachusetts, Estados Unidos: Addison Wesley
 
 
