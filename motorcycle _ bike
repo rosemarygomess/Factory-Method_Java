@@ -1,0 +1,72 @@
+abstract class Vehicle {
+  public abstract int getWheel();
+
+# método para a classe Object retorna
+  
+  public String toString() {
+    return "Wheel: " + this.getWheel();
+  }
+}
+# explicar o objeto
+
+class Motorcycle extends Vehicle {
+  int wheel;
+  
+  Motorcycle(int wheel) {
+    this.wheel = wheel;
+  }
+
+  @Override
+  public int getWheel() {
+    return this.wheel;
+  }
+}
+
+class Bike extends Vehicle {
+  int wheel;
+  
+  Bike(int wheel) {
+    this.wheel = wheel;
+  }
+  
+  @Override
+  public int getWheel() {
+    return this.wheel;
+  }
+}
+#Fornece uma interface para a criação de famílias de objetos
+
+class VehicleFactory {
+  public static Vehicle getInstance(String type, int wheel) {
+    if(type == "motorcycle") {
+      return new motorcycle(wheel);
+    } else if(type == "bike") {
+      return new Bike(wheel);
+    }
+    
+#3#
+#3
+#Retornar a classe 
+
+    3#
+
+return null;
+  }
+}
+
+#Declaração da classe 
+FactoryPatternExample {
+
+#Retorno do método
+  public static void main(String[] args) {
+    Vehicle Motorcycle = VehicleFactory.getInstance("motorcycle", 4);
+#saída de texto
+
+    System.out.println(motorcycle);
+    
+    Vehicle bike = VehicleFactory.getInstance("bike", 2);
+    System.out.println(bike);
+  }
+
+}
+Fim
